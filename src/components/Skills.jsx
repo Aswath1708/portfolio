@@ -6,12 +6,12 @@ const Skills = () => {
   return (
     <div className="bg-blueGray text-white p-10 flex flex-col gap-5">
       <h1>Skills</h1>
-      <div className="flex flex-row flex-wrap gap-5">
+      <div className="flex flex-row flex-wrap justify-evenly items-center gap-5">
         {skills.map((skill, i) => {
           return (
             <div key={i} className="w-32">
               {" "}
-              <img src={skill} alt="skill" className="w-full"/>{" "}
+              <img src={skill} alt="skill" className="w-full" />{" "}
             </div>
           );
         })}
