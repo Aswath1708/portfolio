@@ -1,9 +1,9 @@
 import React from "react";
-import Profile from '../assets/Profile.jpg';
+import Profile from "../assets/Profile.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div className="bg-brightYellow flex flex-row items-center gap-10 p-10">
       <div>
         <img src={Profile} alt="profile-image" />
       </div>

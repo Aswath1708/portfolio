@@ -1,22 +1,22 @@
-import React from 'react'
+import React from "react";
+import { getNavLinks } from "../utils/getNavLinks";
 
 const NavBar = () => {
-  return (
-    <nav className="bg-blueGray text-white flex flex-row justify-between">
-        <h1>portfolio</h1>
-        <ul className="flex flex-row">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Contact Me</a>
-            </li>
-            <li>
-                <a href="#">Projects</a>
-            </li>
-        </ul>
-    </nav>
-  )
-}
+  const navLinks = getNavLinks();
 
-export default NavBar
+  return (
+    <nav className="bg-blueGray text-white flex flex-row justify-between p-10 sticky top-0">
+      <h1>portfolio</h1>
+      <ul className="w-60 flex flex-row justify-around">
+        {navLinks.map(({ link, text }, i) => (
+          <li key={i}>
+            {" "}
+            <a href={link}>{text}</a>{" "}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+export default NavBar;
