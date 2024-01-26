@@ -1,10 +1,15 @@
 
 import './App.css';
+import About from './components/About';
+import NavBar from './components/NavBar';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='bg-red-500'>Hello</h1>
+      <NavBar/>
+      <About/>
+      <Skills/>
     </div>
   );
 }
