@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-row justify-center bg-brightYellow text-blueGray gap-10 p-10">
+    <div className="flex flex-row justify-center bg-brightYellow text-blueGray gap-10 p-10" id="contact">
       <form className="w-1/3 flex flex-col gap-5">
         <input
           type="text"
