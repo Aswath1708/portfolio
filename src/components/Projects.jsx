@@ -4,9 +4,9 @@ import { getProjects } from "../utils/getProjects";
 const Projects = () => {
   const projects = getProjects();
   return (
-    <div className="bg-brightYellow text-blueGray flex flex-col gap-5 p-10">
-      <h1>Projects</h1>
-      <div className="flex flex-row justify-evenly">
+    <div className="bg-brightYellow text-blueGray flex flex-col items-center gap-5 p-5 xl:px-10 xl:py-20" id="projects">
+      <h1 className="text-xl">PROJECTS</h1>
+      <div className="flex flex-row justify-evenly gap-5 flex-wrap">
         {projects.map(({ link, title, image }, i) => {
           return (
             <div key={i} className="w-80 h-80 rounded-xl overflow-hidden">

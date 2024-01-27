@@ -11,7 +11,7 @@ const Footer = () => {
         {footerLinks.map(({ icon, link }, i) => {
           return <li key={i}>
             <a href={link} className="text-white">
-              <FontAwesomeIcon icon={icon} />
+              <FontAwesomeIcon icon={icon} className="h-8"/>
             </a>
           </li>;
         })}

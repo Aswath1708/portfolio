@@ -7,7 +7,21 @@ import React from "../assets/skills/React.png";
 import Tailwind from "../assets/skills/Tailwind.png";
 import Git from "../assets/skills/Git.png";
 import Npm from "../assets/skills/Npm.png";
+import {
+  faBootstrap,
+  faCss3,
+  faGit,
+  faHtml5,
+  faJava,
+  faJs,
+  faNpm,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+
+// export const getSkills = () => {
+//   return [Java, HTML, CSS, JS, Bootstrap, React, Tailwind, Git, Npm];
+// };
 
 export const getSkills = () => {
-  return [Java, HTML, CSS, JS, Bootstrap, React, Tailwind, Git, Npm];
+  return [faJava, faHtml5, faCss3, faJs, faBootstrap, faReact, faGit, faNpm];
 };

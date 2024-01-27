@@ -3,15 +3,17 @@ import Profile from "../assets/Profile.jpg";
 
 const About = () => {
   return (
-    <div className="bg-brightYellow flex flex-row items-center gap-10 p-10">
-      <div>
-        <img src={Profile} alt="profile-image" />
+    <div className="bg-brightYellow text-blueGray flex lg:flex-row justify-center items-center gap-10 p-10 lg:h-halfFull h-fit flex-col">
+      <div className="h-3/4">
+        <img src={Profile} alt="profile-image" className="h-full" />
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio sint
-        repellendus quibusdam ipsa. Voluptas ducimus est animi cumque dolor, non
-        quo voluptatem suscipit voluptatum maiores ratione, fuga nesciunt nihil.
-      </p>
+      <div className="flex flex-col gap-5">
+        <h1 className="text-4xl text-center">Aswath S</h1>
+        <p className="text-center text-lg">
+          A Frontend Developer seeking an opportunity to enhance and explore my
+          technical knowledge.
+        </p>
+      </div>
     </div>
   );
 };
