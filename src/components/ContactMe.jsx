@@ -7,7 +7,7 @@ const ContactMe = () => {
       id="contact"
     >
       <form
-        className="flex flex-col gap-5 xl:w-2/4 2xl:w-1/4 w-3/4"
+        className="flex flex-col gap-5 xl:w-2/4 2xl:w-1/4 w-4/5"
         action="mailto:aswathbabu2000@gmail.com"
         method="post"
         encType="text/plain"

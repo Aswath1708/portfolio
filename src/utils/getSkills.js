@@ -1,12 +1,3 @@
-import Java from "../assets/skills/Java.png";
-import HTML from "../assets/skills/HTML5.png";
-import CSS from "../assets/skills/CSS.png";
-import JS from "../assets/skills/JavaScript.png";
-import Bootstrap from "../assets/skills/Bootstrap.png";
-import React from "../assets/skills/React.png";
-import Tailwind from "../assets/skills/Tailwind.png";
-import Git from "../assets/skills/Git.png";
-import Npm from "../assets/skills/Npm.png";
 import {
   faBootstrap,
   faCss3,
@@ -17,20 +8,35 @@ import {
   faNpm,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHourglassHalf,
+  faLanguage,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
-// export const getSkills = () => {
-//   return [Java, HTML, CSS, JS, Bootstrap, React, Tailwind, Git, Npm];
-// };
+export const getTechSkills = () => {
+  return {
+    title: "TECH SKILLS",
+    skillSet: [
+      { skill: "JAVA", icon: faJava },
+      { skill: "HTML5", icon: faHtml5 },
+      { skill: "CSS3", icon: faCss3 },
+      { skill: "JS", icon: faJs },
+      { skill: "BOOTSTRAP", icon: faBootstrap },
+      { skill: "REACT", icon: faReact },
+      { skill: "GIT", icon: faGitAlt },
+      { skill: "NPM", icon: faNpm },
+    ],
+  };
+};
 
-export const getSkills = () => {
-  return [
-    { skill: "JAVA", icon: faJava },
-    { skill: "HTML5", icon: faHtml5 },
-    { skill: "CSS3", icon: faCss3 },
-    { skill: "JS", icon: faJs },
-    { skill: "BOOTSTRAP", icon: faBootstrap },
-    { skill: "REACT", icon: faReact },
-    { skill: "GIT", icon: faGitAlt },
-    { skill: "NPM", icon: faNpm },
-  ];
+export const getNonTechSkills = () => {
+  return {
+    title: "NON TECH SKILLS",
+    skillSet: [
+      { skill: "COMMUNICATION", icon: faLanguage },
+      { skill: "TIME MANAGEMENT", icon: faHourglassHalf },
+      { skill: "TEAM PERSON", icon: faUserGroup },
+    ],
+  };
 };
