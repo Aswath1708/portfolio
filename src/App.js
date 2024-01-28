@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans" >
       <NavBar />
       <About />
       <Skills />

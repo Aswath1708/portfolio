@@ -6,7 +6,7 @@ const Footer = () => {
   const footerLinks = getFooterLinks();
 
   return (
-    <div className="p-10 bg-blueGray text-center">
+    <div className="p-10 bg-blueGray text-center flex flex-col gap-5">
       <ul className="flex flex-row justify-center gap-5">
         {footerLinks.map(({ icon, link }, i) => {
           return <li key={i}>
@@ -16,6 +16,7 @@ const Footer = () => {
           </li>;
         })}
       </ul>
+      <p className="text-white">KEEP IN TOUCH</p>
     </div>
   );
 };

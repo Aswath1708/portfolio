@@ -10,7 +10,7 @@ import Npm from "../assets/skills/Npm.png";
 import {
   faBootstrap,
   faCss3,
-  faGit,
+  faGitAlt,
   faHtml5,
   faJava,
   faJs,
@@ -23,5 +23,14 @@ import {
 // };
 
 export const getSkills = () => {
-  return [faJava, faHtml5, faCss3, faJs, faBootstrap, faReact, faGit, faNpm];
+  return [
+    { skill: "JAVA", icon: faJava },
+    { skill: "HTML5", icon: faHtml5 },
+    { skill: "CSS3", icon: faCss3 },
+    { skill: "JS", icon: faJs },
+    { skill: "BOOTSTRAP", icon: faBootstrap },
+    { skill: "REACT", icon: faReact },
+    { skill: "GIT", icon: faGitAlt },
+    { skill: "NPM", icon: faNpm },
+  ];
 };
