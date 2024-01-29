@@ -8,8 +8,8 @@ const Skills = ({ title, skillSet }) => {
       <div className="flex flex-row flex-wrap justify-center items-center gap-5">
         {skillSet.map(({ skill, icon }, i) => {
           return (
-            <div className="flex flex-col items-center">
-              <FontAwesomeIcon icon={icon} key={i} className="h-10" />
+            <div className="flex flex-col items-center" key={i}>
+              <FontAwesomeIcon icon={icon} className="h-10" />
               <p>{skill}</p>
             </div>
           );

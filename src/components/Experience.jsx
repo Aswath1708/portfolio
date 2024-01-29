@@ -9,11 +9,17 @@ const Experience = () => {
       <h1 className="text-xl font-medium">EXPERIENCE</h1>
       <ul>
         {experience.map(
-          ({ type, designation, company, startDate, endDate }) => {
+          ({ type, designation, company, startDate, endDate }, i) => {
             return (
-              <li>
-                <p className="text-lg text-center">
-                  {type} - {designation}, {company}. {startDate}-{endDate}
+              <li
+                className="flex flex-col md:flex-row lg:gap-3 text-lg text-center"
+                key={i}
+              >
+                <p>{type}-</p>
+                <p>{designation},</p>
+                <p>{company}.</p>
+                <p>
+                  {startDate}-{endDate}
                 </p>
               </li>
             );
