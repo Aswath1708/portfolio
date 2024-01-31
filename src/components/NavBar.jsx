@@ -10,8 +10,8 @@ const NavBar = () => {
   const { burgerRef } = useContext(burgerContext);
 
   return (
-    <nav className="bg-blueGray text-white text-lg flex flex-row justify-between p-10 sticky top-0 z-10">
-      <h1>Portfolio</h1>
+    <nav className="bg-blueGray text-white text-lg flex flex-row justify-between md:p-10 p-6 sticky top-0 z-10">
+      <h1 className="font-bold">PORTFOLIO</h1>
       <ul className="w-72 hidden lg:flex flex-row justify-around">
         <li>
           <p
@@ -20,7 +20,7 @@ const NavBar = () => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
             }
           >
-            Home
+            HOME
           </p>
         </li>
         {navLinks.map(({ link, text }, i) => (
@@ -38,7 +38,7 @@ const NavBar = () => {
       </ul>
       <FontAwesomeIcon
         icon={faBars}
-        className="lg:hidden block cursor-pointer"
+        className="lg:hidden block cursor-pointer h-5"
         onClick={() => (burgerRef.current.style.display = "flex")}
       />
     </nav>

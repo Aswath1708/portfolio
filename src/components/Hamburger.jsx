@@ -11,7 +11,7 @@ const Hamburger = () => {
   return (
     <div
       ref={burgerRef}
-      className="hidden fixed h-screen md:w-halfFullVw w-quarterHalfFullVw bg-blueGrayTransparent text-white flex-row justify-between p-10 text-lg z-10"
+      className="hidden fixed right-0 h-screen md:w-halfFullVw w-quarterHalfFullVw bg-blueGrayTransparent text-white flex-row justify-between p-10 text-lg z-10 md:animate-wiggleHalf animate-wiggleQuarterHalf"
     >
       <ul className="flex flex-col gap-5">
         <li
@@ -20,7 +20,7 @@ const Hamburger = () => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
           }
         >
-          <p>Home</p>
+          <p>HOME</p>
         </li>
         {navLinks.map(({ link, text }, i) => {
           return (

@@ -14,6 +14,20 @@ module.exports = {
         halfFullVw: "50vw",
         quarterHalfFullVw: "75vw",
       },
+      keyframes: {
+        wiggleHalf: {
+          "0%": { left: "100%" },
+          "100%": { left: "50%" },
+        },
+        wiggleQuarterHalf:{
+          "0%":{left:"100%"},
+          "100%":{left:"25%"},
+        }
+      },
+      animation: {
+        wiggleHalf: "wiggleHalf 0.2s ease-in-out 1",
+        wiggleQuarterHalf: "wiggleQuarterHalf 0.2s ease-in-out 1",
+      },
     },
   },
   plugins: [],

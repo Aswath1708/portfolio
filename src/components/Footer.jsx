@@ -16,7 +16,7 @@ const Footer = () => {
           </li>;
         })}
       </ul>
-      <p className="text-white">KEEP IN TOUCH</p>
+      <p className="text-brightYellow font-medium">KEEP IN TOUCH</p>
     </div>
   );
 };

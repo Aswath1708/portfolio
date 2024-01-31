@@ -28,12 +28,13 @@ const ContactMe = () => {
         <textarea
           cols="30"
           rows="5"
-          className="bg-transparent border-b-2 border-solid border-black focus:outline-none"
+          className="px-3 bg-transparent border-b-2 border-solid border-black focus:outline-none placeholder:text-blueGray"
+          placeholder="Enter your message"
           required
         ></textarea>
         <button
           type="submit"
-          className="border-black border-2 py-3 px-6 w-fit font-medium"
+          className="border-black border-2 py-3 px-6 w-fit font-medium hover:text-brightYellow hover:bg-blueGray"
         >
           SUBMIT
         </button>

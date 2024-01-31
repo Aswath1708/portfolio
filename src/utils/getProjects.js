@@ -6,22 +6,22 @@ import portfolio from "../assets/projects/portfolio.jpg";
 export const getProjects = () => [
   {
     image: linkedIn,
-    title: "LinkedIn Clone",
+    title: "LINKEDIN CLONE",
     link: "https://react-linkedin-clone-livid.vercel.app/",
   },
   {
     image: relianceDigital,
-    title: "Reliance Digital Clone",
+    title: "RELIANCE DIGITAL CLONE",
     link: "https://reliance-digital-clone-green.vercel.app/",
   },
   {
     image: stockMarket,
-    title: "Stock Market Dashboard",
+    title: "STOCK MARKET DASHBOARD",
     link: "https://stock-market-dashboard-js-milestone-project.vercel.app/",
   },
   {
     image: portfolio,
-    title: "Portfolio",
+    title: "PORTFOLIO",
     link: "https://portfolio-theta-three-24.vercel.app/",
   },
 ];

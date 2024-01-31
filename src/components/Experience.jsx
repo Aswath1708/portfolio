@@ -6,7 +6,7 @@ const Experience = () => {
 
   return (
     <div className="p-10 flex flex-col items-center gap-5 bg-blueGray text-white">
-      <h1 className="text-xl font-medium">EXPERIENCE</h1>
+      <h1 className="text-xl font-medium">MY EXPERIENCE</h1>
       <ul>
         {experience.map(
           ({ type, designation, company, startDate, endDate }, i) => {
