@@ -20,7 +20,7 @@ const Projects = () => {
                 <img
                   src={image}
                   alt="project-image"
-                  className="w-full h-full object-cover hover:scale-125  duration-1000"
+                  className="w-full h-full object-cover rounded-xl hover:scale-125  duration-1000"
                 />
                 <p className="absolute bottom-0 w-full text-blueGray font-bold bg-white py-2 px-3">
                   {title}
