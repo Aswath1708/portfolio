@@ -10,12 +10,12 @@ const NavBar = () => {
   const { burgerRef } = useContext(burgerContext);
 
   return (
-    <nav className="bg-blueGray text-white text-lg flex flex-row justify-between md:p-10 p-6 sticky top-0 z-10">
-      <h1 className="font-bold">PORTFOLIO</h1>
+    <nav className="bg-gray-800 text-white text-lg flex flex-row justify-between md:p-10 p-6 sticky top-0 z-10">
+      <h1 className="font-black text-yellow-300">&#x3c;&#x2f;&#x3e;</h1>
       <ul className="w-72 hidden lg:flex flex-row justify-around">
         <li>
           <p
-            className="hover:underline cursor-pointer"
+            className="hover:text-brightYellow cursor-pointer"
             onClick={() =>
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
             }
@@ -29,7 +29,7 @@ const NavBar = () => {
             <AnchorLink
               offset={() => 100}
               href={link}
-              className="hover:underline"
+              className="hover:text-brightYellow"
             >
               {text}
             </AnchorLink>{" "}

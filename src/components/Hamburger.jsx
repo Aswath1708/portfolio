@@ -11,9 +11,9 @@ const Hamburger = () => {
   return (
     <div
       ref={burgerRef}
-      className="hidden fixed right-0 h-screen md:w-halfFullVw w-quarterHalfFullVw bg-blueGrayTransparent text-white flex-row justify-between p-10 text-lg z-10 md:animate-wiggleHalf animate-wiggleQuarterHalf"
+      className="hidden fixed right-0 h-screen md:w-[50vw] w-[75vw] bg-gray-800 text-white flex-row justify-between p-10 text-lg z-10 md:animate-wiggleHalf animate-wiggleQuarterHalf"
     >
-      <ul className="flex flex-col gap-5">
+      <ul className="flex flex-col justify-center gap-5">
         <li
           className="cursor-pointer"
           onClick={() =>

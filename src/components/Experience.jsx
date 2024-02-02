@@ -5,7 +5,7 @@ const Experience = () => {
   const experience = getExperience();
 
   return (
-    <div className="p-10 flex flex-col items-center gap-5 bg-blueGray text-white">
+    <div className="p-10 flex flex-col items-center gap-5 bg-gray-800 text-white">
       <h1 className="text-xl font-medium">MY EXPERIENCE</h1>
       <ul>
         {experience.map(
