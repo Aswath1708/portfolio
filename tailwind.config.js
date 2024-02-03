@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         "contact-bg": "url('/src/assets/contact bg.jpg')",
+        "skills-bg":"url('/src/assets/SkillsBg.svg')",
       },
     },
   },

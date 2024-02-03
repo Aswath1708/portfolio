@@ -10,8 +10,8 @@ const Footer = () => {
       <ul className="flex flex-row justify-center gap-5">
         {footerLinks.map(({ icon, link }, i) => {
           return <li key={i}>
-            <a href={link} className="text-white hover:text-brightYellow">
-              <FontAwesomeIcon icon={icon} className="h-6 bg-yellow-600 p-3 rounded-full"/>
+            <a href={link} className="text-white">
+              <FontAwesomeIcon icon={icon} className="h-6 bg-yellow-500 p-3 hover:text-gray-800 rounded-xl"/>
             </a>
           </li>;
         })}

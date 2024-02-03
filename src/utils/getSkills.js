@@ -8,15 +8,10 @@ import {
   faNpm,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faHourglassHalf,
-  faLanguage,
-  faUserGroup,
-} from "@fortawesome/free-solid-svg-icons";
 
 export const getTechSkills = () => {
   return {
-    title: "TECH SKILLS",
+    title: "My Tech Skills.",
     skillSet: [
       { skill: "JAVA", icon: faJava },
       { skill: "HTML5", icon: faHtml5 },
@@ -26,17 +21,6 @@ export const getTechSkills = () => {
       { skill: "REACT", icon: faReact },
       { skill: "GIT", icon: faGitAlt },
       { skill: "NPM", icon: faNpm },
-    ],
-  };
-};
-
-export const getNonTechSkills = () => {
-  return {
-    title: "NON TECH SKILLS",
-    skillSet: [
-      { skill: "COMMUNICATION", icon: faLanguage },
-      { skill: "TIME MANAGEMENT", icon: faHourglassHalf },
-      { skill: "TEAM PERSON", icon: faUserGroup },
     ],
   };
 };

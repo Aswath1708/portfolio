@@ -12,31 +12,31 @@ const ContactMe = () => {
         method="post"
         encType="text/plain"
       >
-        <h1 className="text-xl  font-bold">CONTACT ME</h1>
+        <h1 className="text-xl font-black italic text-gray-400">Drop a Message.</h1>
         <input
           type="text"
-          placeholder="Enter your Name"
-          className="p-3 bg-transparent border-b-2 border-solid border-black placeholder:text-gray-800 focus:outline-none"
+          placeholder="Enter your Name*"
+          className="p-3 bg-transparent border-b-2 border-solid border-gray-800 placeholder:text-gray-500 focus:outline-none"
           required
         />
         <input
           type="email"
-          placeholder="Enter your email address"
-          className="p-3 bg-transparent border-b-2 border-solid border-black placeholder:text-gray-800 focus:outline-none"
+          placeholder="Enter your email address*"
+          className="p-3 bg-transparent border-b-2 border-solid border-gray-800 placeholder:text-gray-500 focus:outline-none"
           required
         />
         <textarea
           cols="30"
           rows="5"
-          className="px-3 bg-transparent border-b-2 border-solid border-black focus:outline-none placeholder:text-gray-800"
-          placeholder="Enter your message"
+          className="px-3 bg-transparent border-b-2 border-solid border-gray-800 focus:outline-none placeholder:text-gray-500"
+          placeholder="Enter your message*"
           required
         ></textarea>
         <button
           type="submit"
-          className="border-black border-2 py-3 px-6 w-fit font-medium hover:text-yellow-300 hover:bg-gray-800"
+          className="py-3 px-6 w-fit font-medium text-white hover:text-yellow-300 bg-gray-800 rounded"
         >
-          SUBMIT
+          SEND
         </button>
       </form>
     </div>

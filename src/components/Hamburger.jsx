@@ -11,7 +11,7 @@ const Hamburger = () => {
   return (
     <div
       ref={burgerRef}
-      className="hidden fixed right-0 h-screen md:w-[50vw] w-[75vw] bg-gray-800 text-white flex-row justify-between p-10 text-lg z-10 md:animate-wiggleHalf animate-wiggleQuarterHalf"
+      className="hidden fixed right-0 h-screen md:w-[50vw] w-[75vw] bg-gray-800 text-gray-500 flex-row justify-between p-10 text-lg z-10 md:animate-wiggleHalf animate-wiggleQuarterHalf"
     >
       <ul className="flex flex-col justify-center gap-5">
         <li
@@ -25,7 +25,7 @@ const Hamburger = () => {
         {navLinks.map(({ link, text }, i) => {
           return (
             <li key={i}>
-              <AnchorLink offset={() => 100} href={link}>
+              <AnchorLink offset={() => 100} href={link} onClick={()=>burgerRef.current.style.display="none"}>
                 {text}
               </AnchorLink>
             </li>
