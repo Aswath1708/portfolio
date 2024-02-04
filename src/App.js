@@ -18,12 +18,12 @@ function App() {
 
   return (
     <burgerContext.Provider value={{ burgerRef }}>
-      <div className="font-sans">
-        <div className="h-screen flex flex-col">
+      <div>
+        {/* <div className="h-screen flex flex-col"> */}
           <NavBar />
           <Hamburger />
           <About />
-        </div>
+        {/* </div> */}
         <Projects />
         <div className="md:bg-skills-bg bg-no-repeat bg-[center_right_5rem]">
           <Skills {...techSkills} />

@@ -5,6 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { burgerContext } from "../App";
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const navLinks = getNavLinks();
@@ -24,9 +25,25 @@ const NavBar = () => {
             HOME
           </p>
         </li>
+
+        {/* scrollToSection = (sectionId) => {
+
+scroller.scrollTo(sectionId, {
+
+duration: 800,
+
+delay: 0,
+
+smooth: 'easeInOutQuart',
+
+});
+
+}; */}
+
         {navLinks.map(({ link, text }, i) => (
           <li key={i}>
             {" "}
+            {/* <NavLink to={link}> */}
             <AnchorLink
               offset={() => 100}
               href={link}
@@ -34,6 +51,7 @@ const NavBar = () => {
             >
               {text}
             </AnchorLink>{" "}
+            {/* </NavLink> */}
           </li>
         ))}
       </ul>

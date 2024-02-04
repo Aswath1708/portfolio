@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectCard = ({link,image,title}) => {
+const ProjectCard = ({ link, image, title }) => {
   return (
     <div className="w-80 h-80 overflow-hidden rounded-xl duration-75 relative">
       <a href={link}>
