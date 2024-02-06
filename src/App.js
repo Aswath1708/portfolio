@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { getTechSkills } from "./utils/getSkills";
+import Academics from "./components/Academics";
 
 export const burgerContext = createContext();
 
@@ -19,16 +20,15 @@ function App() {
   return (
     <burgerContext.Provider value={{ burgerRef }}>
       <div>
-        {/* <div className="h-screen flex flex-col"> */}
-          <NavBar />
-          <Hamburger />
-          <About />
-        {/* </div> */}
+        <NavBar />
+        <Hamburger />
+        <About />
         <Projects />
         <div className="md:bg-skills-bg bg-no-repeat bg-[center_right_5rem]">
           <Skills {...techSkills} />
         </div>
         <Experience />
+        <Academics />
         <ContactMe />
         <Footer />
       </div>

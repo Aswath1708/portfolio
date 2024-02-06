@@ -8,7 +8,7 @@ export const getAcademics = () => {
       institution:
         "THANTHAI PERIYAR GOVERNMENT INSTITUTE OF TECHNOLOGY, VELLORE",
       logo: tpgit,
-      education: "",
+      education: "B.E. Computer Science & Engineering",
       from: "2018",
       to: "2022",
       cgpa: "7.75",
@@ -16,7 +16,7 @@ export const getAcademics = () => {
     {
       institution: "BRINDHAVAN HIGHER SECONDARY SCHOOL, PATTUKOTTAI",
       logo: bhss,
-      education: "",
+      education: "Higher Secondary",
       from: "2016",
       to: "2018",
       cgpa: "9.00",
@@ -24,7 +24,7 @@ export const getAcademics = () => {
     {
       institution: "ARUNODHAYA HIGHER SECONDARY SCHOOL, SENDANKADU",
       logo: ahss,
-      education: "",
+      education: "High School",
       from: "2015",
       to: "2016",
       cgpa: "9.78",
