@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { burgerContext } from "../App";
 import logo from "../assets/logo.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const navLinks = getNavLinks();
