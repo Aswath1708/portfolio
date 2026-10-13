@@ -21,9 +21,10 @@ const About = () => {
           <span className="font-bold text-yellow-500 text-2xl">
             Frontend Developer
           </span>{" "}
-          seeking an opportunity to enhance and explore my technical knowledge
-          gained at Anna University and Newton School. I hold a Bachelor of
-          Engineering degree from{" "}
+          building secure, scalable web applications in fintech — currently
+          at InCred Financial Services, working across React, Angular, and
+          Node.js to ship real-time dashboards and data-heavy products. I
+          hold a Bachelor of Engineering degree from{" "}
           <span className="text-xl">
             Thanthai Periyar Government Institute of technology
           </span>
