@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div className="p-10 flex flex-col items-center md:items-start gap-10 bg-gray-800 text-white" id="experience">
       <h1 className="text-xl font-black text-gray-400">Experience.</h1>
-      <ul className="flex flex-col gap-10 w-full md:max-w-2xl border-l-2 border-yellow-400/30 md:pl-10 pl-6">
+      <ul className="flex flex-col gap-10 w-full md:max-w-2xl border-l-2 border-yellow-400/30 md:pl-8 pl-4">
         {experience.map(
           ({ type, designation, company, startDate, endDate }, i) => {
             const isWork = type === "WORK";
